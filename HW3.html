@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<style>
+
+body {background-color: #e6f2ff; }
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  text-align: left;
+}
+
+.accordion {
+  background-color: #bbf2ea;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 60%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.panel {
+padding: 0 18px;
+background-color: #bbf2ea;
+display: none;
+overflow: hidden;
+
+
+}
+</style>
+
+  <title> Resume </title>
+  <img src = "https://www.asu.edu/asuthemes/4.8/assets/full_logo.png" style = "width:100px"> <br>
+ <a href = "akong2@asu.edu"> akong2@asu.edu </a> <br>
+ <a href = "https://www.asu.edu/"> (123)-456-7890 </a> <br>
+ <a href = "https://www.asu.edu/"> 123 Number Street </a> <br>
+
+<body>
+  <table style="width:100%">
+    <tr>
+      <th> School </th>
+      <th> Years Attended </th>
+    </tr>
+
+    <tr>
+      <td> Queen Creek High School </td>
+      <td> 2012-2016 </td>
+    </tr>
+
+    <tr>
+      <td> Arizona State University </td>
+      <td> 2016-present </td>
+    </tr>
+  </table>
+
+<button class="accordion">Experience</button>
+<div class="panel">
+    <p>  Cashier/Self Checkout Host
+    <ol>
+      <li> Operating cash register </li>
+      <li> Ringing up items and voiding items </li>
+      <li> Aiding customers with self-checkout machine </li>
+      </ol> </p>
+
+     <p>  Library Intern
+      <ol>
+        <li> Check items in and out </li>
+        <li> Replace items in proper area </li>
+        </ol>
+</p>
+</div>
+
+<button class="accordion">References</button>
+<div class="panel">
+  <ul>
+  <li> Bob Jones (123-123-1234)</li>
+  <li> Mary Baker (987-987-9876) </li>
+
+</div>
+
+<script>
+
+
+var a = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < a.length; i++)
+{
+a[i].addEventListener("click", function() {
+this.classList.toggle("active");
+
+var panel = this.nextElementSibling;
+if (panel.style.display === "block") {
+panel.style.display = "none"; }
+else {
+panel.style.display = "block";
+}
+});
+}
+
+</script>
+
+
+
+</body>
+
+
+</head>
+</html>
