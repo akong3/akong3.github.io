@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html>
-
+<body style="background-color:#B5FFEF;">
 
 <head>
 
 <style>
 
-body {background-color: #e6f2ff; }
-table, th, td {
-  border: 1px solid black;
-}
-th {
-  text-align: left;
-}
+* {font-family: Optima; }
 
 .accordion {
-  background-color: #bbf2ea;
+  background-color: #42E0E0;
   color: #444;
   cursor: pointer;
   padding: 15px;
@@ -28,37 +22,42 @@ th {
 
 .panel {
 padding: 0 18px;
-background-color: #bbf2ea;
+background-color: #B5FFEF;
 display: none;
 overflow: hidden;
+}
 
-
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #42E0E0;
+  font-size: 14px;
 }
 </style>
 
-  <title> Resume </title>
-  <img src = "https://www.asu.edu/asuthemes/4.8/assets/full_logo.png" style = "width:100px"> <br>
- <a href = "akong2@asu.edu"> akong2@asu.edu </a> <br>
- <a href = "https://www.asu.edu/"> (123)-456-7890 </a> <br>
- <a href = "https://www.asu.edu/"> 123 Number Street </a> <br>
+  <img src = "https://www.asu.edu/asuthemes/4.8/assets/full_logo.png" style = "width:150px">
 
-<body>
-  <table style="width:100%">
-    <tr>
-      <th> School </th>
-      <th> Years Attended </th>
-    </tr>
+ <div class="header"> <h2>Audrey Kong</h2>
+ </div>
 
-    <tr>
-      <td> Queen Creek High School </td>
-      <td> 2012-2016 </td>
-    </tr>
+ <a href = "akong2@asu.edu" style="color: #03C5CB"> akong2@asu.edu </a> &#8226;
+(123)-456-7890  &#8226;
+123 Number Street &#8226;
+ Tempe, AZ 85142
 
-    <tr>
-      <td> Arizona State University </td>
-      <td> 2016-present </td>
-    </tr>
-  </table>
+   <br>
+   <br>
+
+<button class="accordion">Education</button>
+<div class="panel">
+
+Queen Creek High School &emsp; 2012-2016 <br>
+Arizona State University &emsp;&emsp; 2016-present
+<br>
+</p>
+</div>
+
+ <br>
 
 <button class="accordion">Experience</button>
 <div class="panel">
@@ -76,6 +75,8 @@ overflow: hidden;
         </ol>
 </p>
 </div>
+
+<br>
 
 <button class="accordion">References</button>
 <div class="panel">
